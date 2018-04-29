@@ -1,0 +1,167 @@
+15/04/12 15.00pm Author Bloodfangx | REV 1
+- Start Working on ascent Branch
+
+15/04/12 15.52pm Author Bloodfangx | REV 2
+- Implement Sun++ Scripting 
+
+15/04/12 16.00 Author Bloodfangx | REV 3
+- Started converting Arc scripts from TbcE to Summit ascent format.
+
+15/04/12 20.32 Author Bloodfangx | REV 4
+- Update Base files with New Functions and Methods And Target Selections 
+IE Target_SecondMostHated Etc.
+
+15/04/12 20.33 Author Bloodfangx | REV 5
+Scripts/Sunwell:Sucessfully Convert Sunwell Plat to Summit Ascent Format /Woooo
+
+15/04/12 20.40 Author Bloodfangx | REV 6
+- Implement More Target definitions into base
+
+01/05/12 13.53 Author Bloodfangx | REV 7
+- Expand Gm On Command to Bypass Instance requirements. | Affected files Level1.Cpp
+
+01/05/12 14.07 Author Bloodfangx | REV 8
+- Implement Custom Reset Health-Mana-Cooldown Core Script to duel system | Affected files Player.Cpp
+- Update Dueling Boundary to 85 yards up from 75 | Affected Files Player.cpp
+ 
+01/05/12 15.32 Author Bloodfangx | REV 9
+- Implement Player update fields for dodge calculations
+- Implement Correct Dodge calculation Methods
+
+01/05/12 16.40 Author Bloodfangx | REV 10
+- Implement Crit to dodge ratio
+
+02/05/12 02.39 Author Bloodfangx | REV 11
+- Try to fix Berserker Rage
+- Fix Victory rush only usable once per kill.
+
+02/05/12 03.22 Author Bloodfangx | REV 12
+- Spell Fix Immunity effect for Berserker rage should work.
+
+02/05/12 19.21 Author Bloodfangx | REV 13
+- Implement HasVisialPosAurasOfNameHashWithCaster Into Unit 
+- Add more Aura Checks Into Unit, MAX_POSITIVE_AURA_EXTENDED, START ETC.
+
+02/05/12 19.32 Author Bloodfangx | REV 14
+- Fix Vampiric Touch, will now restore mana on proc/use.
+
+02/05/12 19.32 Author Bloodfangx | REV 15
+- Attempt fixing Warlock health stones , warlock's should now recieve the item "healthstone" when using the specefic rank spell.
+
+02/05/12 19.32 Author Bloodfangx | REV 16
+- Attempt to fix Nether protection, procs of shadow and fire dmg DoT's ticks.
+
+02/05/12 19.32 Author Bloodfangx | REV 17
+- Implement SpellCastResult Into Spell
+
+02/05/12 19.32 Author Bloodfangx | REV 18
+- Implement Missing UNIT_FLAGS for npcs Thanks to arc for this.
+
+09/05/12 15.32 Author Bloodfangx | REV 20
+- Expand HasFreeSlots Function to include bg type if inside an arena.
+
+09/05/12 19.32 Author Bloodfangx | REV 21
+- Work On Updating Battleground system
+
+09/05/12 19.32 Author Bloodfangx | REV 22
+- Expand CanPlayerJoin 
+
+09/05/12 19.32 Author Bloodfangx | REV 23
+- Implement ProcOnNameHash 
+- Port Spell Fixes From My Arcemu Branch.
+
+09/05/12 19.32 Author Bloodfangx | REV 24
+- Fix Energized
+- Fix Spell focus trigger( Mystical Skyfire Diamond
+- Fix Skyfire Swiftness ( Thundering Skyfire diamond)
+- Fix Tsunami Talisman
+- Fix Assassination Rogue 2 set bonus
+
+09/05/12 19.32 Author Bloodfangx | REV 25
+- Fix Rogue Sword Spec Rank 1-5
+
+09/05/12 19.32 Author Bloodfangx | REV 26
+- Fix Madness Of The Betrayer Proc Rate.
+
+
+21/05/12 20.40 Author Bloodfangx | REV 27
+- Implement IsNeutralFaction into unit.
+
+21/05/12 20.40 Author Bloodfangx | REV 28
+- Implement CanSee into unit.
+
+21/05/12 21.22 Author Bloodfangx | REV 29
+-Implement UnsafeCanOwnerAttackUnit into AIinterface
+
+21/05/12 21.22 Author Bloodfangx | REV 30
+- Scripts/Sunwell: Rewrote Sunblade Cabalist script using UpdateAi timers.
+
+21/05/12 17.15 Author Bloodfangx | REV 31
+- Implement Character enchant visuals to the character selection screen
+
+21/05/12 18.20 Author Bloodfangx | REV 32
+- Implement RepairItem2 call into Level2.cpp
+- Implement Handlerepairitemscommand Into Level2
+- Implement Repair Command
+
+
+21/05/12 18.20 Author Bloodfangx | REV 33
+- Implement Title defintions for Player known titles system
+- Change Titles from Hex into Correct Id's enums.
+- Implement PLAYER_KNOWN_TITLES
+
+
+21/05/12 18.42 Author Bloodfangx | REV 34
+- UpdateFields for 2.4.3 Thanks to arc for this.
+
+21/05/12 18.42 Author Bloodfangx | REV 35
+- Implement HasKnownTitle
+- Implement SetKnownTitle. 
+
+21/05/12 21.30 Author Bloodfangx | REV 36
+- Add files for speeddetecting anti cheat.
+
+27/05/12 05.03 Author Bloodfangx | REV 37
+- Update Some Movement opcodes for 2.4.3
+
+
+27/05/12 02.23 Author Bloodfangx | REV 38
+- Implement Vapor trail Template AI for felmyst encounter
+
+
+27/05/12 02.40 Author Bloodfangx | REV 39
+- Update More of felmyst start implementing Encapsulate , need to hardcode a spell fix for this the gravity check isn't currently working.
+
+27/05/12 02.51 Author Bloodfangx | REV 40
+- Spell Fix Encapsulate add a fly effect on channel, DOESN'T WORK.
+
+02/06/12 05.29 Author Bloodfangx | REV 41
+- Implemented Gas nova on Felmyst
+- Add in Phase_Flight check into AIUpdate for felmyst
+
+02/06/12 05.40 Author Bloodfangx | REV 42
+- Add UNIT_FIELD_BOUNDINGRADIUS and UNIT_FIELD_COMBATREACH checks to felmyst and Brut, some reason it isn't working as it should tho :|.
+- Add Init to OnCombatStop for Felmyst, should remove the problem with spell timers activating to fast as combat started.
+
+02/06/12 05.40 Author Bloodfangx | REV 43
+Scripts/Sunwell/Twins
+- update todo
+- Remove Old Static casts on Twins encounter in SWP and use new TO_PLAYER And unit checks.
+
+03/06/12 05.40 Author Bloodfangx | REV 44
+Scripts/Sunwell/Felmyst
+- Implement Mob_felmust_vaporai
+- Add init() to class constructor will fix the spell timers initiatingto fast
+
+
+03/06/12 05.58 Author Bloodfangx | REV 45
+Scripts/Sunwell/Felmyst
+- Implement Mob_felmyst_vaporAI
+
+17/06/12 05.48 Author Bloodfangx | REV 46
+Script/Base
+- implemented Event_OnCombatStop - it is used with AddEmote event part by using this, text emote will show when Npc goes back to home position (reset)
+
+23/06/12 04.45 Author Bloodfangx | REV 47
+Script/WorldPvp
+- implemented Zangamarsh pvp and Terrokar Forest Pvp.
